@@ -762,7 +762,9 @@
             "今晚适合做点啥",
             "我也是没看到啊",
             "纵观世界无非就两件事最火：断章取义和美名其曰。[嘴唇]",
-            "没看月亮吗"
+            "没看月亮吗",
+            "别买",
+            "深有体会，而且我们mvp居然还是集成的第三方封装的基类，动都不敢动\n写接口类的，有个建议，自己写一个本项目的代码生成插件，一键生成mvp的所有类，github上有挺多这种插件，找一个对着项目来修改就好"
         ],
         "article": [
             "感谢，学习了，受益颇多",
@@ -1619,7 +1621,22 @@
             "await to.js怎么样，公司都是用这种写法，比写try catch优雅一丢丢",
             "有个这么个问题啊，我一般会在try加上loading, 然后finally内关闭loading, 我有这样的需求 还是需要加上try,catch吧[发呆]， 全局捕获promise的错误也是同理。。",
             "用了之后热编译非常慢, 而且没效果, 可否给个vue2+ ant-design-vue的demo, 谢谢",
-            "写很详细"
+            "写很详细",
+            "可以看看angular的cdk，有点类似",
+            "没太看懂➕1",
+            "有点像 angular cdk，https://material.angular.io/cdk/categories",
+            "adobe已经做了\nhttps://github.com/adobe/react-spectrum",
+            "看了一眼组件库，太丑，就没再看下去了。。。",
+            "雀食，以前做 b 端，antd 那套换个皮就行了。今年开始做 dapp，重新调研了 ui 组件库，antd / mui 太重；tailwind / windicss 原子化太放飞了，写的爽维护太难受，有些带一点逻辑的组件原子化css 撸起来还是有点麻烦；结果看到了Chakra，轻量且完整性拓展性都挺好，Chakra 这套Styled System 预设加上 CSS in JS 拓展真的很香。React-Hook-Form、TanStack-Table 也都用过，感谢作者 又 star 个 React-Popper。感叹下 react 的开源大社区。",
+            "我都是使用高阶组件（HOC）来实现这种需求，主要是把控件的逻辑抽取出来，然后 PC和移动端的控件共用一套逻辑，UI分别实现。\n\n不过这个handless也是一种方式，学习了",
+            "有所启发，觉得基于 Web Component 的组件库也可能是未来组件发展方向之一，最近刚开源的 quark design 跨技术栈前端组件库： https://github.com/hellof2e/quark-design。\n\n也不知道以后能不能把这两个也打通，handles UI + web component，估计会更灵活了",
+            "图形化编辑器可以开源吗，想学一下[呲牙]",
+            "果然是你",
+            "烟花好看",
+            "我虽然看不懂，但我大受震撼[庆祝]",
+            "关注了",
+            "你们 pixijs一般应用在什么场景中",
+            "可以，关注一波"
         ]
     }
 }

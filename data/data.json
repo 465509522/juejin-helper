@@ -1533,7 +1533,9 @@
             "今日废话：当雪崩发生时，没有一片雪花，不在浪迹天涯。",
             "把content打印出来，看看元素还在不在咯",
             "今日废话：忘掉一个人的劣根性就像把千辛万苦赚来的钱扔掉一样。",
-            "今日废话：幸运的人一生都在被童年治愈，不幸的人一生都在治愈童年。"
+            "今日废话：幸运的人一生都在被童年治愈，不幸的人一生都在治愈童年。",
+            "ck()\nelement = driver.find_element_by_id(\"element_id\")\n```\n需要注意的是，重新获取元素时，要确保页面已经完全加载完成。可以使用 `WebDriverWait` 来等待页面加载完成后再获取元素。例如：\n```python\nwait.until(EC.presence_of_element_located((By.ID, \"element_id\")))\nelement = driver.find_element_by_id(\"element_id\")\n```\n综上所述，可以使用显式等待或重新获取元素的方式来解决 Selenium 中页面刷新后之前获取的元素失效的问题。根据具体情况选择合适的方式，可以提高自动化测试的稳定性和可靠性。",
+            "在使用 Selenium 进行自动化测试时，如果页面发生刷新或跳转，之前获取的元素就会失效，因为 DOM 树被重新加载了。要解决这个问题，可以使用如下两种方式：\n1. 显式等待\n在操作之前，先等待目标元素变为可用状态。例如，在点击一个按钮后，等待页面重新加载完成，可以使用如下代码：\n```python\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.support import expected_conditions as EC\nwait = WebDriverWait(driver, 10)\n# 等待页面重新加载完成\nwait.until(EC.staleness_of(element))\n```\n其中，`driver` 是 WebDriver 对象，`element` 是要等待其被移除的元素。因为页面重新加载之后，之前的元素就被重新加载进来，变成了另外一个元素，所以需要先判断之前的元素是否被移除掉了。\n2. 页面刷新后重新获取元素\n有些情况下，显式等待可能会出现问题，例如ck()\nelement = driver.find_element_by_id(\"element_id\")\n```\n需要注意的是，重新获取元素时，要确保页面已经完全加载完成。可以使用 `WebDriverWait` 来等待页面加载完成后再获取元素。例如：\n```python\nwait.until(EC.presence_of_element_located((By.ID, \"element_id\")))\nelement = driver.find_element_by_id(\"element_id\")\n```\n综上所述，可以使用显式等待或重新获取元素的方式来解决 Selenium 中页面刷新后之前获取的元素失效的问题。根据具体情况选择合适的方式，可以提高自动化测试的稳定性和可靠性。页面刷新时，有些元素只是重新加载，但是还是同一个元素。此时，就需要重新获取目标元素。可以在页面重新加载完成后，使用 `driver.find_element_by_xxx` 方法重新获取目标元素。例如：\n`"
         ],
         "article": [
             "感谢，学习了，受益颇多",
@@ -4430,7 +4432,8 @@
             "2023-3-21下午1:40按照教程成功开通了",
             "币安火币不行吗？",
             "不用那么麻烦，开PLUS，绑定信用卡请找我",
-            "今日废话：为学日益，为道日损。"
+            "今日废话：为学日益，为道日损。",
+            "有趣"
         ]
     }
 }
